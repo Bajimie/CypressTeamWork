@@ -1,0 +1,19 @@
+{
+  "name": "itranscriptautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run",
+    "headTest": "npm test -- --headed",
+    "chromeTest": "npm  test -- --browser chrome",
+    "chromeHeadlessTest": "npm  test --headless --browser chrome",
+    "recordDashboardTest": "npm  test --  --record --key 28fef3d0-0b4a-4f5e-a9f7-dd3f847a8814 --reporter mochawesome",
+    "cypressReport": "npm run test -- --record --key 28fef3d0-0b4a-4f5e-a9f7-dd3f847a8814"
+  },
+  "author": "Bajimi",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.0.0"
+  }
+}
